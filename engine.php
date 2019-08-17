@@ -7,7 +7,7 @@
         array_push($ip_addresses, gethostbyname($hostname));
     }
 
-    $ip_list = substr(implode(', ', $ip_addresses),1);
+    $ip_list = substr(implode(', ', $ip_addresses),2);
 
     $conn = new mysqli($db_host, $db_username, $db_password, $db_name);
 
