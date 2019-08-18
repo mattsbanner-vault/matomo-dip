@@ -37,8 +37,8 @@ $db_password = "somethingsecure";
 
 ```
 
-5. Add `engine.php` as a cron job *(recommended)*, or post as a public page you can manually visit when needed *(not recommended)*.
+5. Add `engine.php` as a cron job *(recommended)* the following will run once per day, or post as a public page you can manually visit when needed *(not recommended)*.
 
 ```sh
-$ 0 0 12 1/1 * ? * /usr/bin/php -q /home/user/tools/matomo-dip/engine.php
+0 0 12 1/1 * ? * /usr/bin/php -q /home/user/tools/matomo-dip/engine.php
 ```
