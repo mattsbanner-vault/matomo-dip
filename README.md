@@ -1,4 +1,4 @@
-# Matomo - Automatic Dynamic IP Address Updater
+# Matomo - Dynamic IP Address Updater
 
 Simple script that can update the global exclude IP's of [Matomo](https://matomo.org/) to the resolution of hostnames.
 
