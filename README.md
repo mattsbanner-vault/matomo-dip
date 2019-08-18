@@ -1,8 +1,10 @@
-# Matomo Dynamic Exclude IP Updater
+# Matomo - Automatic Dynamic IP Address Updater
 
 Simple script that can update the global exclude IP's of [Matomo](https://matomo.org/) to the resolution of hostnames.
 
-Dynamic DNS hostnames can be specified in the array, along with any static IP's you wish to add.
+Dynamic DNS hostnames can be specified in the array, along with any static IP's you wish to add. Matomo will then exclude visitors at these addresses from being tracked.
+
+**Any IP addresses added via the UI, will be overwritten by this script.**
 
 ## Install
 
