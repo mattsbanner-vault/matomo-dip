@@ -14,7 +14,7 @@
     $sql = "UPDATE `option` SET `option_value` = '".$ip_list."' WHERE `option_name` = 'SitesManager_ExcludedIpsGlobal'";
 
     $conn->query($sql);
-    
+
     $conn->close();
 
 ?>
