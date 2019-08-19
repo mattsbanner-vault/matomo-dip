@@ -4,10 +4,18 @@
 
     foreach($hostnames as $hostname)
     {
-        array_push($ip_addresses, gethostbyname($hostname));
+        array_push(gethostbyname($hostname));
     }
 
-    $ip_list = substr(implode(',', $ip_addresses),1);
+    array_push($ip_addresses);
+
+    if(!empty($hostnames))
+    {
+        $ip_list = substr(implode(',', $ip_addresses),1);
+    }
+    else{
+        $ip_list = implode(',', $ip_addresses);
+    }
 
     $conn = new mysqli($db_host, $db_username, $db_password, $db_name);
 
